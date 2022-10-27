@@ -1,4 +1,4 @@
-// const IP = '172.127.5.14'; // Added cause weird localhost IP
+// const IP = 'example ip'; // Added cause weird localhost IP
 const express = require('express');
 const app = express();
 const router = express.Router();
