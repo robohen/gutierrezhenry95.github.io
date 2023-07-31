@@ -100,10 +100,10 @@
   }
   
   .NM-button{
-    display: flex;
-    float: right;
-    padding-top: 60px;
-    padding-right: 30px;
+    position: fixed;
+    top:17px;
+    right:10px;
+    z-index: 9999;
   }
   .blob{
     position: absolute;
@@ -118,14 +118,7 @@
     opacity: 0;
     position: absolute;
   }
-  .nm{
-    display: block;
-    float: right;
-    padding-top: 65px;
-    padding-right: 29px;
-    
-  }
-  
+
   .info.night{
     color: white; 
   }
@@ -185,29 +178,45 @@
   }
   .projectsHeader{
     text-align: center;
+    padding-left: 15px;
   }
-  .JSONtext{
-
-padding-left: 702px;
-margin-top: -140px;
-
- }
+  .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .project a {
+    margin:20px;
+    display: flex;
+    justify-content: center;
+  }
+  .project img {
+    /* Add the following style to force images to stay on the left */
+    display: flex;
+    justify-content: center;
+    
+  }
+  .project-description {
+    max-width: 600px;
+    text-align: left;
+  }
+  .netli{
+    text-decoration: none;
+  }
+  .weightGif{
+    width: 20%;
+  }
  a:link1, a:visited{
   text-decoration: none;
-  
+ }
+ a:link2, a:visited{
+  text-decoration: none;
  }
  .link1:hover{
   color: red;
  }
- .weightGif{
-  max-width: 30%;
-  margin-left: -625px;
-  padding-top: 100px;
- }
- .secondDescription{
-  margin-top: -240px;
- }
- .workoutLink:hover{
+ .link2:hover{
   color: red;
  }
  .githubicon{
